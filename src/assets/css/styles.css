@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .responsive-container{
+        @apply lg:px-40 px-8
+    }
+
+    .section-line{
+        @apply bg-gradient h-[2px] w-[10vw]
+    }
+
+    .text-muted{
+        @apply text-slate-600
+    }
+    
+    .bg-gradient{
+        @apply bg-gradient-to-r from-primary to-secondary
+    }
+    
+    .text-gradient{
+        @apply bg-gradient bg-clip-text text-transparent
+    }
+    
+    .btn{
+        @apply px-5 py-2 rounded-full transition-all duration-300 ease-in-out cursor-pointer
+    }
+
+    .btn-primary{
+        @apply bg-primary border-2 border-primary text-white hover:bg-secondary hover:border-secondary
+    }
+    
+    .btn-outline{
+        @apply border-2 border-primary hover:border-opacity-0 hover:bg-gradient hover:text-gray-50 
+    }
+
+    .btn-nav{
+        @apply border-2 border-primary border-opacity-0 hover:border-opacity-100 
+    }
+
+    .btn-scale{
+        @apply hover:scale-105
+    }
+
+    .footer-social{
+        @apply text-slate-500 hover:text-slate-700 transition duration-300 cursor-pointer
+    }
+
+    .navbar-toogler{
+        @apply cursor-pointer hover:scale-105 transition-all duration-300
+    }
+
+    .navbar-menu{
+        @apply absolute flex flex-col justify-end -translate-x-20 translate-y-5 transition-all duration-300 bg-white rounded-md px-2 py-3 shadow-lg backdrop-blur-sm bg-opacity-80
+    }
+
+    .card{
+        @apply rounded-2xl shadow-lg border-[3px]
+    }
+    
+    .card-body{
+        @apply p-8
+    }
+}

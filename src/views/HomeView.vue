@@ -1,0 +1,83 @@
+<script setup>
+</script>
+
+<template>
+	<main>
+		<div id="landing" class="responsive-container sm:translate-y-0 -translate-y-6">
+			<section class="flex flex-row justify-between">
+				<div class="left-section cursor-default flex flex-col justify-center items-start md:w-2/3">
+					<div class="section-line"></div>
+					<div class="my-4">
+						<h3 class="text-muted sm:text-xl text-md">Greetings! My name is</h3>
+						<h1 class="text-gradient sm:text-[40px] text-[28px] font-bold w-fit h-fit my-1">Jose Stephen Satrya</h1>
+						<h2 class="text-muted font-bold sm:text-xl text-lg w-fit h-fit">I am a <span class="text-gradient sm:text-[32px] text-[24px]">Software Engineer</span></h2>
+					</div>
+					<p class="text-muted text-base max-w-xl text-justify mb-4">
+						Currently, I am studying at BINUS University as an undergraduate Computer Science student. I am passionate and interested to explore more about software engineering for various technological platforms especially the web.
+					</p>
+					<div class="flex gap-3 items-center">
+						<button class="btn btn-outline text-muted max-w-fit sm:text-lg text-base" @click="$router.push({name:'projects'})">View Projects</button>
+						<a href="/Resume_Jose Stephen Satrya.pdf" target="_blank">
+							<button class="btn btn-primary text-muted max-w-fit sm:text-lg text-base">View Resume</button>
+						</a>
+					</div>
+				</div>
+				<div class="right-section sm:flex sm:w-1/3 h-screen justify-center items-center">
+					<img src="@/assets/images/circle.webp" class="landing-image -z-10" alt="landing-image">
+				</div>
+			</section>
+		</div>
+	</main>
+</template>
+
+<style scoped>
+#landing{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+.landing-image{
+	opacity: 0.65 !important;
+	position: absolute;
+	width: 400px;
+	top: 225px;
+	right: 125px;
+}
+@media (max-width: 1039px){
+	.landing-image{
+		opacity: 0.6 !important;
+		position: absolute;
+		width: 300px;
+		top: 250px;
+		right: 50px;
+	}
+}
+@media (max-width: 820px){
+	.landing-image{
+		opacity: 0.6 !important;
+		position: absolute;
+		width: 300px;
+		top: 250px;
+		right: 50px;
+	}
+}
+@media (max-width: 768px){
+	.landing-image{
+		opacity: 0.6 !important;
+		position: absolute;
+		width: 250px;
+		top: 250px;
+		right: 50px;
+	}
+}
+@media (max-width: 640px) {
+	.landing-image{
+		opacity: 0.5 !important;
+		position: absolute;
+		width: 200px;
+		top: 614px;
+		right: 0px;
+	}
+}
+</style>
