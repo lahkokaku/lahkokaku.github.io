@@ -1,11 +1,12 @@
 <script setup>
+import 'animate.css';
 </script>
 
 <template>
 	<main>
 		<div id="landing" class="responsive-container sm:translate-y-0 ">
 			<section class="flex sm:flex-row flex-col sm:justify-between justify-center">
-				<div class="left-section cursor-default flex flex-col justify-center items-start md:w-2/3">
+				<div class="animate__animated animate__fadeInLeft left-section cursor-default flex flex-col justify-center items-start md:w-2/3">
 					<div class="section-line"></div>
 					<div class="my-4">
 						<h3 class="text-muted sm:text-xl text-md">Greetings! My name is</h3>
@@ -22,7 +23,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="right-section sm:flex sm:w-1/3 hidden sm:h-screen justify-center items-center">
+				<div class="animate__animated animate__fadeInRight right-section sm:flex sm:w-1/3 hidden sm:h-screen justify-center items-center">
 					<img src="@/assets/images/circle.webp" class="landing-image -z-10" alt="landing-image">
 				</div>
 			</section>

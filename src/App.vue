@@ -19,14 +19,14 @@ import ScrollToTopButton from '@/components/ScrollToTopButton.vue';
 <style>
 .route-leave-to{
   opacity: 0;
-  transform: translateY(50px);
+  /* transform: translateY(50px); */
 }
 .route-enter-from {
   opacity: 0;
-  transform: translateY(50px);
+  /* transform: translateY(50px); */
 }
 .route-enter-active{
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .route-leave-active {
   transition: all 0.6s ease-in-out;
