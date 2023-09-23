@@ -3,8 +3,8 @@
 
 <template>
 	<main>
-		<div id="landing" class="responsive-container sm:translate-y-0 -translate-y-6">
-			<section class="flex flex-row justify-between">
+		<div id="landing" class="responsive-container sm:translate-y-0 ">
+			<section class="flex sm:flex-row flex-col sm:justify-between justify-center">
 				<div class="left-section cursor-default flex flex-col justify-center items-start md:w-2/3">
 					<div class="section-line"></div>
 					<div class="my-4">
@@ -22,7 +22,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="right-section sm:flex sm:w-1/3 h-screen justify-center items-center">
+				<div class="right-section sm:flex sm:w-1/3 hidden sm:h-screen justify-center items-center">
 					<img src="@/assets/images/circle.webp" class="landing-image -z-10" alt="landing-image">
 				</div>
 			</section>
@@ -39,45 +39,24 @@
 }
 .landing-image{
 	opacity: 0.65 !important;
-	position: absolute;
 	width: 400px;
-	top: 225px;
-	right: 125px;
+	transform: translateY(50px);
 }
-@media (max-width: 1039px){
+@media (max-width: 1265px){
 	.landing-image{
 		opacity: 0.6 !important;
-		position: absolute;
 		width: 300px;
-		top: 250px;
-		right: 50px;
+		transform: translateX(30px);
+		transform: translateY(50px);
 	}
 }
-@media (max-width: 820px){
+@media (max-width: 950px){
 	.landing-image{
 		opacity: 0.6 !important;
-		position: absolute;
 		width: 300px;
-		top: 250px;
-		right: 50px;
+		transform: translateX(30px);
+		transform: translateY(50px);
 	}
 }
-@media (max-width: 768px){
-	.landing-image{
-		opacity: 0.6 !important;
-		position: absolute;
-		width: 250px;
-		top: 250px;
-		right: 50px;
-	}
-}
-@media (max-width: 640px) {
-	.landing-image{
-		opacity: 0.5 !important;
-		position: absolute;
-		width: 200px;
-		top: 614px;
-		right: 0px;
-	}
-}
+
 </style>
