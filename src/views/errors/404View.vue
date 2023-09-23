@@ -9,7 +9,7 @@
                 <span class="font-light">Not found</span>
                 <p class="font-normal text-lg">Make sure you enter a valid URL</p>
             </h1>
-            <button class="btn btn-primary text-2xl font-light w-fit" @click="$router.push({name: 'home'})">Home</button>
+            <button class="btn btn-primary text-muted text-lg w-fit" @click="$router.push({name: 'home'})">Home</button>
         </section>
     </main>
 </template>
