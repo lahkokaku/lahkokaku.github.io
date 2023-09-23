@@ -19,7 +19,7 @@ import { projects } from '@/constants'
 							<button v-for="tech, index in project.techStack" :key="index" class="btn btn-scale bg-primary me-0.5 mb-0.5">{{ tech }}</button>
 						</div>
 						<div class="mt-3 flex justify-end sm:text-base text-sm">
-							<button class="btn btn-scale border-2 border-primary" @click="$router.push({name:'projects-show', params:{id: index}})">
+							<button class="btn btn-scale border-2 border-primary text-muted" @click="$router.push({name:'projects-show', params:{id: index}})">
 								Read More 
 								<i class="fa-solid fa-arrow-right text-primary"></i>
 							</button>

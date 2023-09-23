@@ -5,9 +5,9 @@
                 Let's talk!
             </div>
             <div class="flex gap-4 font-normal sm:text-2xl text-xl">
-                <a class="footer-social" href="mailto:jose.satrya@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a class="footer-social" href="https://www.linkedin.com/in/jose-stephen-502257290" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="footer-social" href="https://github.com/lahkokaku" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="footer-social" aria-label="Email" href="mailto:jose.satrya@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a class="footer-social" aria-label="LinkedIn" href="https://www.linkedin.com/in/jose-stephen-502257290" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="footer-social" aria-label="GitHub" href="https://github.com/lahkokaku" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="text-muted text-base">
                 ©️ {{ new Date().getFullYear() }} Jose Stephen Satrya
