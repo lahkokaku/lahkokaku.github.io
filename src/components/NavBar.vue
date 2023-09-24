@@ -33,17 +33,17 @@ refresh();
             </div>
             <div @click="toogleNavbar()" class="md:hidden min-h-full">
                 <i class="fa-regular fa-bars navbar-toogler text-lg text-primary"></i>
-                <div v-show="navbarMenuOpen" class="navbar-menu text-muted">
-                    <button @click="$router.push({name:'home'})" class="btn btn-nav font-normal">Home</button>
-                    <button @click="$router.push({name:'projects'})" class="btn btn-nav font-normal">Projects</button>
-                    <button @click="$router.push(`#footer`)" class="btn btn-nav font-normal">Contact</button>
-                </div>
             </div>
             <div class="gap-2 text-[16px] text-muted md:flex hidden">
                 <button @click="$router.push({name:'home'})" class="btn btn-nav font-normal">Home</button>
                 <button @click="$router.push({name:'projects'})" class="btn btn-nav font-normal">Projects</button>
                 <button @click="$router.push(`#footer`)" class="btn btn-nav font-normal">Contact</button>
             </div>
+        </div>
+        <div v-show="navbarMenuOpen" class="navbar-menu text-muted">
+            <button @click="$router.push({name:'home'})" class="btn btn-nav font-normal">Home</button>
+            <button @click="$router.push({name:'projects'})" class="btn btn-nav font-normal">Projects</button>
+            <button @click="$router.push(`#footer`)" class="btn btn-nav font-normal">Contact</button>
         </div>
     </nav>
 </template>

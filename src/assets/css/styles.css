@@ -52,7 +52,7 @@
     }
 
     .navbar-menu{
-        @apply absolute flex flex-col justify-end -translate-x-20 translate-y-5 transition-all duration-300 bg-white rounded-md px-2 py-3 shadow-lg backdrop-blur-sm bg-opacity-80
+        @apply flex flex-col justify-center items-end transition-all duration-300 bg-white rounded-md
     }
 
     .card{
