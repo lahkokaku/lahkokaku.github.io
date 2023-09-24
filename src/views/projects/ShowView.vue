@@ -78,7 +78,7 @@ onBeforeMount(() => {
                     <div class="mt-3 grid sm:grid-cols-2 grid-cols-1 place-content-center gap-3">
                         <div v-for="inter,index in projects[curr]?.interfaces" :key="index">
                             <p class="text-muted text-base text-start">{{ inter?.description }}</p>
-                            <div class="sm:max-h-[800px] max-h-[500px] overflow-y-auto shadow-lg border-[2px]">
+                            <div class="sm:max-h-[350px] max-h-[350px] overflow-y-auto shadow-lg border-[2px]">
                                 <img :src="inter?.link ?? `https://picsum.photos/seed/web/400/500.webp`" :alt="inter?.description" decoding="auto" class="w-full">
                             </div>
                         </div>
