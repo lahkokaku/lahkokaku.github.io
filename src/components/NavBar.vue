@@ -41,9 +41,9 @@ refresh();
             </div>
         </div>
         <div v-show="navbarMenuOpen" class="navbar-menu text-muted">
-            <button @click="$router.push({name:'home'})" class="btn btn-nav font-normal">Home</button>
-            <button @click="$router.push({name:'projects'})" class="btn btn-nav font-normal">Projects</button>
-            <button @click="$router.push(`#footer`)" class="btn btn-nav font-normal">Contact</button>
+            <button @click="$router.push({name:'home'}); toogleNavbar()" class="btn btn-nav font-normal">Home</button>
+            <button @click="$router.push({name:'projects'}); toogleNavbar()" class="btn btn-nav font-normal">Projects</button>
+            <button @click="$router.push(`#footer`); toogleNavbar()" class="btn btn-nav font-normal">Contact</button>
         </div>
     </nav>
 </template>
