@@ -16,7 +16,7 @@ import 'animate.css';
 					<p class="text-muted text-base max-w-xl text-justify mb-4">
 						Currently, I am studying at BINUS University as an undergraduate Computer Science student. I am passionate and interested to explore more about software engineering for various technological platforms especially the web.
 					</p>
-					<div class="flex gap-3 items-center">
+					<div class="flex sm:gap-3 gap-1.5 items-center">
 						<button class="btn btn-outline text-muted max-w-fit sm:text-lg text-base" @click="$router.push({name:'projects'})">View Projects</button>
 						<a href="/Resume_Jose Stephen Satrya.pdf" target="_blank">
 							<button class="btn btn-primary text-muted max-w-fit sm:text-lg text-base">View Resume</button>
