@@ -1,32 +1,18 @@
 <script setup>
 import { ref } from 'vue';
-import { useRoute } from'vue-router'
-
-const route = useRoute();
-
-const home = ref();
-const projects = ref();
-
-
-const refresh = () => {
-    if(route.fullPath.includes('projects')){
-        projects.value = true;
-        home.value = false;
-    }else{
-        projects.value = false;
-        home.value = true;
-    }
-}
+import { vAutoAnimate } from '@formkit/auto-animate'
 
 const navbarMenuOpen = ref(false)
-const toogleNavbar = () => {
+const toogleNavbar = async () => {
     navbarMenuOpen.value = !navbarMenuOpen.value
 }
-
-refresh();
+const toogleNavbarMenu = async () => {
+    await new Promise(r => setTimeout(r, 300));
+    navbarMenuOpen.value = !navbarMenuOpen.value
+}
 </script>
 <template>
-    <nav class="fixed z-50 top-0 w-screen shadow-lg backdrop-blur-sm bg-opacity-70 bg-white responsive-container py-4">
+    <nav v-auto-animate class="fixed z-50 top-0 w-screen shadow-lg backdrop-blur-sm bg-opacity-70 bg-white responsive-container py-4">
         <div class="flex justify-between items-center">
             <div @click="$router.push({name:'home'})" class="cursor-pointer">
                 <img src="@/assets/images/logo.webp" alt="Logo" class="navbar-logo">
@@ -40,10 +26,10 @@ refresh();
                 <button @click="$router.push(`#footer`)" class="btn btn-nav font-normal">Contact</button>
             </div>
         </div>
-        <div v-show="navbarMenuOpen" class="navbar-menu text-muted">
-            <button @click="$router.push({name:'home'});" class="btn btn-nav font-normal">Home</button>
-            <button @click="$router.push({name:'projects'});" class="btn btn-nav font-normal">Projects</button>
-            <button @click="$router.push(`#footer`);" class="btn btn-nav font-normal">Contact</button>
+        <div v-auto-animate v-if="navbarMenuOpen" class="navbar-menu text-muted">
+            <button @click="$router.push({name:'home'}); toogleNavbarMenu();" class="btn btn-nav font-normal">Home</button>
+            <button @click="$router.push({name:'projects'}); toogleNavbarMenu();" class="btn btn-nav font-normal">Projects</button>
+            <button @click="$router.push(`#footer`); toogleNavbarMenu();" class="btn btn-nav font-normal">Contact</button>
         </div>
     </nav>
 </template>
