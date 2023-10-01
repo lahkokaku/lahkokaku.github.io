@@ -33,11 +33,11 @@ import 'animate.css'
 
 <style scoped>
 .left-section{
-	animation: fadeInLeft;
+	animation: lightSpeedInLeft;
 	animation-duration: 1s;
 }
 .right-section{
-	animation: fadeInRight;
+	animation: lightSpeedInRight;
 	animation-duration: 1s;
 }
 #landing{
