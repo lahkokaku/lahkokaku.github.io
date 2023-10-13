@@ -25,23 +25,23 @@ export let projects = [
         codeDisclaimer: true,
         linkCode: null,
         linkWeb: 'https://recruitment.mybnec.org',
-        thumbnail: '/images/2023-bnec-recruitment/2023-bnec-recruitment-thumb.png',
+        thumbnail: '/images/2023-bnec-recruitment/2023-bnec-recruitment-thumb.webp',
         interfaces: [
             {
                 description: 'Landing Page', 
-                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-1.jpeg'
+                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-1.webp'
             },
             {
                 description: 'TOEFL Registration Form', 
-                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-2.jpeg'
+                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-2.webp'
             },
             {
                 description: 'User Dashboard', 
-                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-3.jpeg'
+                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-3.webp'
             },
             {
                 description: 'Admin Dashboard', 
-                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-4.jpeg'
+                link: '/images/2023-bnec-recruitment/2023-bnec-recruitment-4.webp'
             }
         ]
     },
@@ -56,11 +56,11 @@ export let projects = [
         codeDisclaimer: true,
         linkCode: null,
         linkWeb: 'https://seo.mybnec.org',
-        thumbnail: '/images/2023-seo/2023-seo-thumb.png',
+        thumbnail: '/images/2023-seo/2023-seo-thumb.webp',
         interfaces: [
             {
                 description: 'Landing Page', 
-                link: '/images/2023-seo/2023-seo-1.jpeg'
+                link: '/images/2023-seo/2023-seo-1.webp'
             }, 
         ]
     },
@@ -80,23 +80,23 @@ export let projects = [
             }
         ],
         linkWeb: null,
-        thumbnail: '/images/piscis-aquarium/piscis-aquarium-thumb.png',
+        thumbnail: '/images/piscis-aquarium/piscis-aquarium-thumb.webp',
         interfaces: [
             {
                 description: 'Landing Page', 
-                link: '/images/piscis-aquarium/piscis-aquarium-1.jpeg'
+                link: '/images/piscis-aquarium/piscis-aquarium-1.webp'
             }, 
             {
                 description: 'Encylopedia Page',
-                link: '/images/piscis-aquarium/piscis-aquarium-2.jpeg'
+                link: '/images/piscis-aquarium/piscis-aquarium-2.webp'
             },
             {
                 description: 'About Us Page',
-                link: '/images/piscis-aquarium/piscis-aquarium-3.jpeg'
+                link: '/images/piscis-aquarium/piscis-aquarium-3.webp'
             },
             {
                 description: 'Contact Us Page',
-                link: '/images/piscis-aquarium/piscis-aquarium-4.jpeg'
+                link: '/images/piscis-aquarium/piscis-aquarium-4.webp'
             }
         ]
     }
