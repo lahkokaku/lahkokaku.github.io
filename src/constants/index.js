@@ -65,6 +65,42 @@ export let projects = [
         ]
     },
     {
+        title: 'Indonesian Youth Olympics',
+        techStack: ['Bootstrap', 'Laravel', 'MySQL'],
+        shortDescription: 'Web Application that acts as a competition portal where you can find and register for competitions.',
+        description: {
+            introduction: 'This web application was made as the final project of Software Engineering Course. The Indonesian Olympics is website that acts a portal for competitions. You can find various competitions here and register for the competition. It also have admin features to manage the Competitions, Payments, and Participants.',
+            role: 'I was in charge of designing the Use Case Diagram, Entity Relation Ship Diagram, and implementing the codes for those designs.'
+        },
+        codeDisclaimer: false,
+        linkCode: [
+            {
+                type: 'Code',
+                link: 'https://github.com/lahkokaku/rm22_app'
+            }
+        ],
+        linkWeb: null,
+        thumbnail: '/images/iyo/iyo-thumb.webp',
+        interfaces: [
+            {
+                description: 'Landing Page', 
+                link: '/images/iyo/iyo-1.webp'
+            }, 
+            {
+                description: 'Competitions List Page', 
+                link: '/images/iyo/iyo-2.webp'
+            }, 
+            {
+                description: 'Competitions Registration Form Page', 
+                link: '/images/iyo/iyo-3.webp'
+            }, 
+            {
+                description: 'Admin Dashboard', 
+                link: '/images/iyo/iyo-4.webp'
+            }, 
+        ]
+    },
+    {
         title: 'Piscis Aquarium',
         techStack: ['HTML', 'CSS', 'JavaScript'],
         shortDescription: 'A simple encylopedia website about marine animals.',
