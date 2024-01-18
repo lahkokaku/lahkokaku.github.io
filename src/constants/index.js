@@ -1,16 +1,25 @@
-// class project {
-//     constructor(){
-//         this.title = 'string';
-//         this.techStack = ['string'];
-//         this.shortDescription = 'string';
-//         this.description = {introduction:'string', role:'string'};
-//         this.codeDisclaimer = boolean;
-//         this.linkCode = [{type: 'string', link: 'string'}];
-//         this.linkWeb = 'string';
-//         this.thumbnail = 'string';
-//         this.interfaces = [{description: 'string', link: 'string'}];
-//     }
-// }
+// interface project {
+//     title: string,
+//     techStack: string[],
+//     shortDescription: string,
+//     description: {
+//         introduction: string, 
+//         role: string
+//     },
+//     codeDisclaimer: boolean,
+//     linkCode: [
+//         {
+//             type: string, 
+//             link: string
+//         }
+//     ] | null,
+//     linkWeb: string | null,
+//     thumbnail: string,
+//     interfaces:{
+//         description: string, 
+//         link: string
+//     }[] | null;
+// };
 
 export let projects = [
     {},
