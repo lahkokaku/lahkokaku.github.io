@@ -7,25 +7,27 @@ import { projects } from '@/constants'
 			<div class="section-line mb-2"></div>
 			<h1 class="sm:text-[36px] text-[30px] font-bold text-gradient h-fit w-fit mb-5">Featured Projects</h1>
 			<div class="grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-4">
-				<div class="card" v-for="(project, index) in projects" :key="index" v-show="index != 0">
-					<div class="flex justify-center">
-						<img :src="project.thumbnail ?? `https://picsum.photos/seed/web/400/200.webp`" loading="lazy" decoding="auto" :alt="project.title" class="project-thumbnail">
-					</div>
-					<div class="card-body">
-						<div class="section-line"></div>
-						<h2 class="text-primary font-bold sm:text-2xl text-xl mt-4">{{ project?.title }}</h2>
-						<p class="text-muted sm:text-base text-sm mt-4">{{ project?.shortDescription }}</p>
-						<div class="text-white mt-4 text-[12.5px]">
-							<button v-for="tech, index in project.techStack" :key="index" class="btn btn-scale bg-primary me-0.5 mb-0.5">{{ tech }}</button>
+				<template v-for="(project, index) in projects" :key="index" >
+					<div class="card" v-if="index != 0">
+						<div class="flex justify-center">
+							<img :src="project.thumbnail ?? `https://picsum.photos/seed/web/400/200.webp`" :loading="index <= 2 ? 'eager' : 'lazy'" decoding="auto" :alt="project.title" class="project-thumbnail">
 						</div>
-						<div class="mt-3 flex justify-end sm:text-base text-sm">
-							<button class="btn btn-scale border-2 border-primary text-muted" @click="$router.push({name:'projects-show', params:{id: index}})">
-								Read More 
-								<i class="fa-solid fa-arrow-right text-primary"></i>
-							</button>
+						<div class="card-body">
+							<div class="section-line"></div>
+							<h2 class="text-primary font-bold sm:text-2xl text-xl mt-4">{{ project?.title }}</h2>
+							<p class="text-muted sm:text-base text-sm mt-4">{{ project?.shortDescription }}</p>
+							<div class="text-white mt-4 text-[12.5px]">
+								<button v-for="tech, index in project.techStack" :key="index" class="btn btn-scale bg-primary me-0.5 mb-0.5">{{ tech }}</button>
+							</div>
+							<div class="mt-3 flex justify-end sm:text-base text-sm">
+								<button class="btn btn-scale border-2 border-primary text-muted" @click="$router.push({name:'projects-show', params:{id: index}})">
+									Read More
+									<i class="fa-solid fa-arrow-right text-primary"></i>
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
+				</template>
 			</div>
 		</section>
 	</main>
