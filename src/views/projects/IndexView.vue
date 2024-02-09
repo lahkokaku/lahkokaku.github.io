@@ -9,8 +9,8 @@ import { projects } from '@/constants'
 			<div class="grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-4">
 				<template v-for="(project, index) in projects" :key="index" >
 					<div class="card" v-if="index != 0">
-						<div class="flex justify-center">
-							<img :src="project.thumbnail ?? `https://picsum.photos/seed/web/400/200.webp`" :loading="index <= 2 ? 'eager' : 'lazy'" decoding="auto" :alt="project.title" class="project-thumbnail">
+						<div class="flex justify-center project-thumbnail">
+							<img :src="project.thumbnail ?? `https://picsum.photos/seed/web/400/200.webp`" :loading="index <= 2 ? 'eager' : 'lazy'" decoding="auto" :alt="project.title">
 						</div>
 						<div class="card-body">
 							<div class="section-line"></div>
@@ -48,7 +48,11 @@ import { projects } from '@/constants'
 }
 
 .project-thumbnail{
-	width: 100%;
 	border-radius: 1rem 1rem 0 0;
+	aspect-ratio: 2/1;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.project-thumbnail img {
+	object-fit: cover;
 }
 </style>
