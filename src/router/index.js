@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import IndexView from '@/views/projects/IndexView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +15,7 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: IndexView,
+      component: () => import('@/views/projects/IndexView.vue'),
       meta: {
         title: 'Projects'
       }
@@ -24,7 +23,7 @@ const router = createRouter({
     {
       path: '/projects/:id',
       name: 'projects-show',
-      component: () => import('../views/projects/ShowView.vue'),
+      component: () => import('@/views/projects/ShowView.vue'),
       props: true,
       meta: {
         title: 'Projects'
@@ -33,7 +32,7 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)',
       name: '404', 
-      component: () => import('../views/errors/404View.vue'),
+      component: () => import('@/views/errors/404View.vue'),
       meta: {
         title: '404'
       }
