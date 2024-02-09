@@ -53,6 +53,7 @@ import { projects } from '@/constants'
 	background-color: rgba(0, 0, 0, 0.1);
 }
 .project-thumbnail img {
+	border-radius: 1rem 1rem 0 0;
 	object-fit: cover;
 }
 </style>
