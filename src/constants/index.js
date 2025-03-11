@@ -24,6 +24,67 @@
 export let projects = [
     {},
     {
+        title: 'Zeal',
+        techStack: ['React.js', 'Next.js', 'NextAuth', 'MongoDB', 'Mongoose', 'Tailwind CSS', 'MUI'],
+        shortDescription: `Online learning platform with integrated features to streamline student's learning process.`,
+        description: {
+            introduction: `A project made for my thesis. For this project, we made an online learning platform that has all of the features that student's need when they are studying. Therefore they can use this application as one stop solution without having the need to switch between multiple applications. Some of those features are <b>courses</b>, <b>notes</b>, <b>forum</b>, <b>schedule</b>, and <b>contact</b> (student can chat and call with each outher).`,
+            role: 'It was developed by a team of 3 person. We did the research, requirements gathering, system design, code development, testing, and evaluation of the application. During development, I was mainly in charge of the contact feature as well as helping other member to fix bugs.'
+        },
+        codeDisclaimer: false,
+        linkCode: [
+            {
+                type: 'Code',
+                link: 'https://github.com/guidowilliam11/e-learning'
+            }
+
+        ],
+        linkWeb: null,
+        thumbnail: '/images/zeal/zeal-dashboard.webp',
+        interfaces: [
+            {
+                description: 'Dashboard Page', 
+                link: '/images/zeal/zeal-dashboard.webp'
+            },
+            {
+                description: 'Courses Page', 
+                link: '/images/zeal/zeal-courses.webp'
+            },
+            {
+                description: 'Sessions in Courses', 
+                link: '/images/zeal/zeal-courses-sessions.webp'
+            },
+            {
+                description: 'Notes Page', 
+                link: '/images/zeal/zeal-notes.webp'
+            },
+            {
+                description: 'Editor for Note', 
+                link: '/images/zeal/zeal-notes-editor.webp'
+            },
+            {
+                description: 'Forum Page', 
+                link: '/images/zeal/zeal-forum.webp'
+            },
+            {
+                description: 'Forum Post', 
+                link: '/images/zeal/zeal-forum-post.webp'
+            },
+            {
+                description: 'Schedule Page', 
+                link: '/images/zeal/zeal-schedule.webp'
+            },
+            {
+                description: 'Contact Page', 
+                link: '/images/zeal/zeal-contact.webp'
+            },
+            {
+                description: 'Call Pop Up', 
+                link: '/images/zeal/zeal-contact-call.webp'
+            },
+        ]
+    },
+    {
         title: '2023 BNEC Recruitment',
         techStack: ['VueJS', 'Tailwind CSS', 'Laravel', 'MySQL'],
         shortDescription: 'Web Application to accomodate various registration processes for BNEC Entities.',
