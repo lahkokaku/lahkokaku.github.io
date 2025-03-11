@@ -11,10 +11,12 @@ import 'animate.css'
 					<div class="my-4">
 						<h3 class="text-muted sm:text-xl text-md">Greetings! My name is</h3>
 						<h1 class="text-gradient sm:text-[40px] text-[28px] font-bold w-fit h-fit my-1">Jose Stephen Satrya</h1>
-						<h2 class="text-muted font-bold sm:text-xl text-lg w-fit h-fit">I am a <span class="text-gradient sm:text-[32px] text-[24px]">Software Engineer</span></h2>
+						<h2 class="text-muted font-bold sm:text-xl text-lg w-fit h-fit"><span class="text-gradient sm:text-[32px] text-[24px]">Software Engineer</span></h2>
 					</div>
 					<p class="text-muted text-base max-w-xl mb-4">
-						Currently, I am studying at BINUS University as an undergraduate Computer Science student. I am passionate and interested to explore more about software engineering for various platforms.
+						I am a Computer Science Fresh Graduate from BINUS University. <br/>
+						Currently, I am undergoing an internship as a Software Engineer at Blibli.com. <br/> 
+						I am passionate and interested to explore more about software engineering, especially <b>Web Interfaces</b> and <b>Backend Services</b>.
 					</p>
 					<div class="flex sm:gap-3 gap-1.5 items-center">
 						<button class="btn btn-outline text-muted max-w-fit sm:text-lg text-base" @click="$router.push({name:'projects'})">View Projects</button>
