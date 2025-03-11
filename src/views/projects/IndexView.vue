@@ -6,7 +6,7 @@ import { projects } from '@/constants'
 		<section id="landing" class="responsive-container">
 			<div class="section-line mb-2"></div>
 			<h1 class="sm:text-[36px] text-[30px] font-bold text-gradient h-fit w-fit mb-5">Featured Projects</h1>
-			<div class="grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-4">
+			<div class="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
 				<template v-for="(project, index) in projects" :key="index" >
 					<div class="card" v-if="index != 0">
 						<div class="flex justify-center project-thumbnail">

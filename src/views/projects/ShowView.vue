@@ -60,7 +60,7 @@ onBeforeMount(() => {
                     <div class="mt-3 text-base">
                         <div v-if="projects[curr]?.linkCode">Code Link: 
                             <p v-for="link, index in projects[curr]?.linkCode" :key="index" class="indent-4">
-                                -{{ link.type }}: <a target="_blank" :href="`${link?.link}`" class="text-primary font-semibold">{{ link?.link }}</a>
+                                {{ link.type }}: <a target="_blank" :href="`${link?.link}`" class="text-primary font-semibold">{{ link?.link }}</a>
                             </p>
                         </div>
                         <p v-if="projects[curr]?.linkWeb">Current Website Link: <a target="_blank" :href="`${projects[curr]?.linkWeb}`" class="text-primary font-semibold">{{ projects[curr]?.linkWeb }}</a>
@@ -75,7 +75,7 @@ onBeforeMount(() => {
             <div class="card mb-4">
                 <div class="card-body">
                     <h3 class="text-primary font-semibold text-xl"><i class="fa-regular fa-image"></i> <span class="text-muted">Interfaces</span></h3>
-                    <div class="mt-3 grid sm:grid-cols-2 grid-cols-1 place-content-center gap-3">
+                    <div class="mt-3 grid sm:grid-cols-2 grid-cols-1 place-content-center gap-4">
                         <div v-for="inter,index in projects[curr]?.interfaces" :key="index">
                             <p class="text-muted text-base text-start">{{ inter?.description }}</p>
                             <div class="sm:max-h-[350px] max-h-[350px] overflow-y-auto shadow-lg border-[2px]">
