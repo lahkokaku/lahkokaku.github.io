@@ -1,0 +1,1 @@
+import{j as o}from"./index-Deql95KN.js";import{c as i}from"./clsx-B-dksMZM.js";const n=({theme:r,width:a,height:t,className:s})=>{const e=r==="dark"?"bg-gradient-dark":"bg-gradient-light";return o.jsx("div",{className:i(e,a,t??"h-1",s)})};export{n as default};
