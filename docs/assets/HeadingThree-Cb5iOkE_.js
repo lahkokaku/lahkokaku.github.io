@@ -1,0 +1,1 @@
+import{j as e}from"./index-DLEyU4_0.js";import{c as o}from"./clsx-B-dksMZM.js";const a=({children:t,className:s})=>e.jsx("h3",{className:o("font-bold sm:text-2xl text-xl",s),children:t});export{a as default};

@@ -1,0 +1,1 @@
+import{j as e,N as n}from"./index-DLEyU4_0.js";import{c as x}from"./clsx-B-dksMZM.js";const m=({children:s,className:a,ignoreActive:t,...o})=>(t=t??!1,e.jsx(n,{className:({isActive:r})=>x("transition duration-300","font-semibold",r&&!t&&"text-secondary-light","hover:text-secondary-light",a),...o,children:s}));export{m as default};

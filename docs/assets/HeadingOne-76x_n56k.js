@@ -1,1 +1,0 @@
-import{j as e}from"./index-y9lXlrzF.js";import{c as o}from"./clsx-B-dksMZM.js";const a=({children:t,className:s})=>e.jsx("h1",{className:o("font-bold sm:text-4xl text-3xl",s),children:t});export{a as default};
