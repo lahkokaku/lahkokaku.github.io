@@ -1,0 +1,1 @@
+import{u as n}from"./useEventListener-BNTOa1LS.js";const r=()=>{const e=document.querySelector("body");n(e,"mousemove",o=>{if(e){const{clientX:t,clientY:s}=o;e.style.setProperty("--gradient-pos",`${t}px ${s}px`)}})};export{r as u};

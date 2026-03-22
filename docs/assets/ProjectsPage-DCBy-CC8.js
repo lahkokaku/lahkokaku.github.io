@@ -1,0 +1,1 @@
+import{j as e,r,c as s}from"./index-Dqj42D5L.js";import{H as t}from"./Helmet-CiBA-XVo.js";import o from"./PagePlaceholder-73opjXzV.js";const{FeaturedProjects:a}=s,l=()=>e.jsxs(e.Fragment,{children:[e.jsx(t,{children:e.jsx("title",{children:"Projects | JSS"})}),e.jsx(r.Suspense,{fallback:e.jsx(o,{}),children:e.jsx(a,{})})]});export{l as default};
